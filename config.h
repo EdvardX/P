@@ -1,7 +1,7 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
-#include <stdlib.h> // Required for EXIT_FAILURE constant
+#include <stdlib.h> 
 
 #define MAX_CARS 9
 #define MAX_FRIENDLY_CARS 2
@@ -34,9 +34,11 @@ typedef struct Config {
     short goal_color;
     short stork_color;
     short road_color;
+    short obstacles_color;
+    short lane_color;
 } Config;
 
 // Function declaration for loading configuration from file.
-void load_config(const char *filename, Config *config);
+void load_config(const char *filename, Config *config); // Loads game configuration settings from a file
 
 #endif

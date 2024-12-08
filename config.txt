@@ -22,3 +22,5 @@ coin_color=4
 goal_color=5
 stork_color=7
 road_color=1
+obstacles_color=8;
+lane_color=9;
